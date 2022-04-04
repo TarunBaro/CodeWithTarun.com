@@ -345,7 +345,15 @@
     <footer>
         <p>Copyright © 2022 CodeWithTarun</p>
     </footer>
-    <script src="script.js"></script>
+    <script>
+        const btn = document.querySelector(".barContainer")
+
+        const navBar = document.querySelector(".hideLinks")
+
+        btn.addEventListener("click", () => {
+            navBar.classList.toggle("outerLinks")
+        })
+    </script>
 </body>
 
 </html>
