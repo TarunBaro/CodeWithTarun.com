@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Calibri, "franklin gothic", "SEGOE UI";
+}
+
+body {
+    background-color: #333;
+}
+
+.leftPartNav {
+    margin-left: 5px;
+}
+
+header nav .links a:hover{
+    background-color: #333;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header nav {
+    width: 100%;
+    height: 60px;
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: sticky;
+    z-index: 2;
+    overflow-y: hidden;
+}
+
+header nav .leftPartNav a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+header nav .links{
+    margin-right: 15px;
+}
+
+header nav .links a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+#sectionOfIndex {
+    background: url("bg2.jpg") center;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.leftBg {
+    background-color: #333;
+    height: 500px;
+    width: 55%;
+    position: absolute;
+    top: 0;
+    left: -65px;
+    transform: skew(-15deg);
+}
+
+.left {
+    display: block;
+    color: white;
+    z-index: 2;
+    position: absolute;
+    margin-top: 50px;
+    width: 40%;
+    padding: 0 30px;
+}
+
+.left h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.left p {
+    margin-bottom: 20px;
+}
+
+a.btn-link {
+    color: white;
+    text-decoration: none;
+    background-color: #8215ee;
+    border: 5px solid #8215ee;
+    display: flex;
+    align-items: center;
+    height: 25px;
+    width: 80px;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.btn-link:hover{
+    background-color: #7009d7;
+    border-color: #7009d7;
+}
+
+.courses {
+    color: white;
+    position: relative;
+    z-index: 3;
+}
+
+.courseContainer .html img {
+    width: 100%;
+    height: 300px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.html {
+    width: 40%;
+    border-radius: 25px;
+    margin: 10px auto;
+    box-shadow: 0px 0px 50px rgb(37, 37, 37);
+}
+
+.html .info{
+    padding: 15px 15px;
+}
+
+.outerLinks{
+    display: none;
+
+}
+/* media queries */
+
+@media (max-width: 800px){
+    .barContainer{
+        display: block;
+        margin-right: 10px;
+    }   
+    .barContainer:hover{
+        cursor: pointer;
+    }
+    .bar{
+        background-color: white;
+        height: 3px;
+        width: 30px;
+        margin-bottom: 3px;
+        border-radius: 3px;
+    }
+    .links{
+        display: none;
+    }
+    .outerLinks{
+        width: 100%;
+        display: flex;
+        z-index: 5;
+        flex-direction: column;
+        color: white;
+        background-color: black;
+    }
+    .outerLinks a{
+        color: white;
+    }
+}
